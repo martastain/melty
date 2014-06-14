@@ -1,7 +1,5 @@
 import uuid
-
-from melty.utils import *
-
+from .utils import *
 
 class Blank():
     def __init__(self, duration):
@@ -87,5 +85,3 @@ class Tractor():
                 wfile += indent(transition.__repr__(), 4)
         wfile+= """</tractor>\n"""
         return wfile
-
-
